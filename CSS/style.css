@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
 
 * {
     box-sizing: border-box;
@@ -9,7 +12,7 @@ body {
     margin: 0;
 }
 
-.logo {
+nav .logo {
     margin-left: 105px;
 }
 
@@ -17,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
     padding: 90px 173px;
 }
 
@@ -35,16 +38,16 @@ nav {
     background: #FFFFFF;
 }
 
-.navref {
+nav .navref {
     list-style-type: none;
     display: flex;
     align-items: center;
-    margin-right: 1%;
+    margin-right: 5%;
     padding: 0;
 
 }
 
-.navref a {
+nav .navref a {
     text-decoration: none;
 
     font-family: 'Manrope';
@@ -65,8 +68,7 @@ nav {
 }
 
 .navref a:hover {
-    background: rgba(43, 43, 43, 0.79);
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(43, 43, 43, 0.79); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(43, 43, 43, 0.79);
     /* opacity: 0; */
     border-radius: 32px;
 
@@ -76,11 +78,20 @@ nav {
     z-index: 2;
     background: #3B3B3B;
     display: flex;
-    /* background: linear-gradient(to left bottom, #3b3b3b, rgba(0,0,0,0.58)); */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.header .column {
-    width: 50%;
+.header .column1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    position: relative;
+}
+
+.header .column2 {
+    width: 40%;
     position: relative;
 }
 
@@ -91,7 +102,36 @@ nav {
     background: linear-gradient(235deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0) 66%)
 }
 
-.vector1 {}
+.vector1 {
+    position: sticky;
+    right: 20px;
+}
+
+.FSquares {
+    position: absolute;
+    left: 53px;
+    top: -25px;
+}
+
+.FUnion {
+    position: absolute;
+    top: -31px;
+}
+
+.FCircles {
+    position: absolute;
+    top: -42px;
+}
+
+.FSemicirctop {
+    position: absolute;
+    top: -23px;
+}
+
+.FSemicircbot {
+    position: absolute;
+    top: 23px;
+}
 
 .vector2 {
     width: 100%;
@@ -102,7 +142,6 @@ nav {
 }
 
 .title1 {
-    height: 176px;
 
     font-family: 'Manrope';
     font-style: normal;
@@ -154,6 +193,7 @@ nav {
 .textArea {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .textArea div:nth-child(1) {
@@ -207,6 +247,7 @@ nav {
 .features {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     background: #EFEFEF;
     padding: 102px;
@@ -216,14 +257,11 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .FDev h3 {
-    width: 200px;
-    height: 32px;
-    left: 56px;
-    top: 125px;
-
+    margin: 60px 0 15px 0;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -269,7 +307,8 @@ nav {
 
 .title3 {
     /* height: 180px; */
-    padding: 0 79px 0 79px;
+    padding: 79px 0 0 0;
+    margin: 0;
 
     font-family: 'Manrope';
     font-style: normal;
@@ -294,7 +333,7 @@ nav {
 }
 
 .subtitle3 {
-    padding: 30px 0;
+    /* padding: 30px 0; */
 
     font-family: 'Manrope';
     font-style: normal;
@@ -319,6 +358,7 @@ nav {
 .cta-btn {
     width: 200px;
     height: 64px;
+    margin: 40px 0 79px 0;
 
     background: #923A3A;
     border-radius: 32px;
@@ -347,13 +387,109 @@ nav {
 
 footer {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-footer div {
-    height: 264px;
+footer .contactInfo {
     background: #FFFFFF;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: flex-start;
     flex-direction: column;
+    padding: 60px 105px;
+}
+
+footer .contactInfo p {
+    margin: 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+
+    display: flex;
     align-items: center;
+
+    color: #2D2D2D;
+}
+
+footer .contactLinks div:nth-child(1) {
+    height: 32px;
+}
+
+footer .contactLinks {
+    padding: 60px 105px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+footer .contactIcons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0 30px 0;
+
+}
+
+footer .contactIcons a {
+    padding: 0 0 0 20px;
+
+}
+
+footer .navref a {
+    text-decoration: none;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* margin: 32px; */
+    margin: 0 0 0 63px;
+    padding: 5px;
+
+    color: #2D2D2D;
+
+
+
+}
+
+
+
+footer .navref {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+}
+
+footer .contactCopy {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contactCopy p {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+    display: flex;
+    align-items: center;
+
+    color: #2D2D2D;
 }
