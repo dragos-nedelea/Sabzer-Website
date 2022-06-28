@@ -11,7 +11,6 @@
 body {
     width: 100%;
     margin: 0;
-
 }
 
 .Logos {
@@ -29,8 +28,9 @@ body {
 /* -------------Navbar------------- */
 
 nav .logo {
-    margin-left: 105px;
+    margin-left: 30px;
     cursor: pointer;
+    width: 108px;
 }
 
 nav {
@@ -101,6 +101,7 @@ nav .navref button {
     flex-wrap: wrap;
     width: 60%;
     position: relative;
+    padding: 70px 100px 30px;
 }
 
 .header .column2 {
@@ -108,16 +109,41 @@ nav .navref button {
     position: relative;
 }
 
+.titleHome {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 30px;
+    color: #F0F0F0;
+}
+
+.subtitle1 {
+    height: 90px;
+    /* width: 564px; */
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 300px;
+    color: #F0F0F0;
+
+    opacity: 0.5;
+}
+
 .gr {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(235deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0) 66%)
+    background: linear-gradient(235deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0) 45%)
 }
 
 .vector1 {
-    position: sticky;
-    right: 20px;
+    position: relative;
 }
 
 .FSquares {
@@ -143,20 +169,7 @@ nav .navref button {
 
 .FSemicircbot {
     position: absolute;
-    top: 23px;
-}
-
-.titleHome {
-
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 90px;
-    margin-top: 70px;
-    margin-left: 100px;
-    margin-bottom: 30px;
-    color: #F0F0F0;
+    top: 49px;
 }
 
 /* -------------Contacts page------------- */
@@ -316,6 +329,7 @@ nav .navref button {
     color: #2B2B2B;
     width: fit-content;
     cursor: pointer;
+    line-height: normal;
 
 }
 
@@ -350,6 +364,7 @@ nav .navref button {
 .CandidatureSection {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 81px 105px;
 }
@@ -398,21 +413,6 @@ nav .navref button {
 .DivColor {
     background: #EFEFEF;
     padding: 51px 0;
-}
-
-.subtitle1 {
-    height: 90px;
-    width: 564px;
-
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    margin-left: 100px;
-    color: #F0F0F0;
-
-    opacity: 0.5;
 }
 
 .WhyUs {
@@ -587,9 +587,6 @@ nav .navref button {
     align-items: center;
     text-align: center;
     color: #2D2D2D;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .subtitle3 {
@@ -677,7 +674,7 @@ nav .navref button {
     font-size: 18px;
     line-height: 32px;
     margin: 0;
-    width: 728px;
+    /* width: 728px; */
     color: #2D2D2D;
 
     opacity: 0.5;
@@ -703,7 +700,7 @@ nav .navref button {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 728px;
+    /* width: 728px; */
     margin: 0;
     padding: 73px 0 0 0;
 
@@ -728,7 +725,9 @@ nav .navref button {
     padding: 103px 0 26px 104px;
 }
 
-.PMsection1 {
+.PMsection1 .title {
+    margin: 0;
+    line-height: normal;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -736,11 +735,6 @@ nav .navref button {
     line-height: 32px;
     color: #000000;
 
-}
-
-.PMsection1 .title {
-    margin: 0;
-    line-height: normal;
 }
 
 .PMsection2 .title {
@@ -886,7 +880,7 @@ nav .navref button {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    
+
 }
 
 .PMForm .container {
@@ -902,8 +896,17 @@ nav .navref button {
 
 }
 
+.PMcontact p {
+    line-height: normal;
+    margin: 50px;
+}
+
+.PMForm {
+    justify-content: center;
+}
+
 .PMForm .container .title {
-    width: 517px;
+    /* width: 517px; */
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
@@ -923,7 +926,7 @@ nav .navref button {
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.25px;
-    width: 490px;
+    /* width: 490px; */
     color: #404040;
 
     opacity: 0.99;
@@ -949,7 +952,7 @@ nav .navref button {
 .PMForm .container .Form .col input {
     width: 150px;
     height: 40px;
-   
+
     /* margin: 0 0 12px 0; */
 
 }
@@ -966,6 +969,7 @@ nav .navref button {
     margin: 0 0 24px 0;
 
 }
+
 .PMForm .container .Form .checkP {
     margin: 0 0 0 15px;
     font-family: 'Manrope';
@@ -1531,6 +1535,10 @@ footer .contactCopy p {
     color: #2D2D2D;
 }
 
+footer .logo {
+    width: 108px;
+}
+
 
 /* -------------Burger------------- */
 
@@ -1542,10 +1550,9 @@ footer .contactCopy p {
 
 label .menu {
     position: absolute;
-    right: -90px;
+    right: 90px;
     top: -90px;
     z-index: 100;
-    width: 200px;
     height: 150px;
     background: #FFF;
     border-radius: 50% 50% 50% 50%;
@@ -1626,6 +1633,7 @@ label input:checked+.menu .hamburger:before {
 
 label input:checked+.menu+ul {
     opacity: 1;
+    /* display: block; */
 }
 
 label ul {
@@ -1640,11 +1648,11 @@ label ul {
     transition: .25s 0s ease-in-out;
     list-style-type: none;
     text-align: center;
+    padding: 0;
 }
 
 label a {
-    margin-bottom: 3em;
-    padding: 20px;
+    margin-bottom: 2em;
     display: block;
     color: #2B2B2B;
     text-decoration: none;
@@ -1676,16 +1684,153 @@ h1 {
 
 /* -------------Media------------- */
 
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width:2560px) {
     nav label {
         display: none;
     }
 
+
+    /* -------------Work At page------------- */
+    .titleWork p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 150px;
+        line-height: initial;
+        align-items: center;
+        color: #2D2D2D;
+    }
+
+    .Work-btn1 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .Work-btn2 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #2B2B2B;
+        cursor: pointer;
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Partership page------------- */
+    .PMForm {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Contacts page------------- */
+    .ContactHeader .ContactColumn {
+        width: 50%;
+    }
+
+
+
+    /* ------------------------------- */
 }
 
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1440px) {
+
+    nav label {
+        display: none;
+    }
+
+    /* -------------Wokr At page------------- */
+    footer {
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+
+    footer .contactInfo {
+        padding: 5px;
+    }
+
+    footer .contactLinks {
+        padding: 5px;
+    }
+
+    .titleWork p {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: initial;
+        align-items: center;
+        color: #2D2D2D;
+    }
+
+    .Work-btn1 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .Work-btn2 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #2B2B2B;
+        cursor: pointer;
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Partership page------------- */
+    .PMForm {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .PMForm .container .title {
+        font-size: 45px;
+    }
+
+    /* ------------------------------- */
+
+
+    /* -------------Contacts page------------- */
+    .ContactHeader {
+        flex-wrap: wrap;
+    }
+
+    .ContactHeader .ContactColumn {
+        width: 100%;
+
+    }
+
+    .ContactHeader .ContactColumn {
+        width: 50%;
+    }
+
+
+
+
+
+
+    /* ------------------------------- */
+}
+
+
+@media screen and (max-width: 1024px) {
+    nav label {
+        display: block;
+    }
+
     nav .navref li {
         display: none;
     }
@@ -1697,4 +1842,433 @@ h1 {
     .header .column1 {
         width: 100%;
     }
+
+
+    /* -------------Work At page------------- */
+
+    .titleWork p {
+        font-size: 90px;
+    }
+
+    .CandidateP2 {
+        margin: 18px 0;
+
+
+    }
+
+    .Work-btn1 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .Work-btn2 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #2B2B2B;
+        cursor: pointer;
+    }
+
+    footer {
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+
+    footer .contactInfo {
+        padding: 5px;
+    }
+
+    footer .contactLinks {
+        padding: 5px;
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Contacts page------------- */
+
+    .ContactHeader .ContactColumn {
+        width: 100%;
+
+    }
+
+    /* ------------------------------- */
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .header .column1 {
+        padding: 60px 100px;
+    }
+
+    .subtitle1 {
+        margin-bottom: 0;
+    }
+
+    .Logos {
+        justify-content: center;
+        padding: 60px;
+    }
+
+    footer {
+        justify-content: space-evenly;
+        padding: 30px 0;
+    }
+
+    footer .contactInfo {
+        padding: 5px;
+    }
+
+    footer .contactLinks {
+        padding: 5px;
+    }
+
+    .FDev {
+        padding: 30px 15px;
+    }
+
+    .title3 {
+        font-size: 70px;
+    }
+
+    .FSquares {
+        position: absolute;
+        left: 68px;
+        top: 4px;
+    }
+
+    .FUnion {
+        position: absolute;
+        top: -1px;
+    }
+
+    .FCircles {
+        position: absolute;
+        top: -10px;
+    }
+
+    .FSemicirctop {
+        position: absolute;
+        top: 3px;
+    }
+
+    .FSemicircbot {
+        top: 49px;
+    }
+
+    /* -------------Work At page------------- */
+    .CandidateP1 {
+        line-height: normal;
+    }
+
+    .CandidateP2 {
+        margin: 18px 0;
+    }
+
+
+    /* ------------------------------- */
+
+    /* -------------Partnershi page------------- */
+    .PMsections {
+        padding: 90px 30px;
+    }
+
+    .PartnerColumn1 {
+        padding: 70px;
+    }
+
+    .PMForm {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .PMForm .container .title {
+        font-size: 80px;
+    }
+
+
+
+    /* ------------------------------- */
+
+    /* -------------Contacts page------------- */
+    
+
+    .ContactColumn img {
+        width: 350px;
+    }
+
+
+
+    /* ------------------------------- */
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+
+    /* -------------Home page------------- */
+
+    .header .column1 {
+        padding: 50px 40px;
+
+    }
+
+    .titleHome {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .WhyUs {
+        padding: 120px 45px;
+    }
+
+    .WhySection img {
+        width: 365px;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .Logos {
+        padding: 70px;
+    }
+
+    .title2 {
+        font-size: 60px;
+    }
+
+    .title3 {
+        font-size: 30px;
+    }
+
+    .subtitle3 {
+        margin: 18px;
+    }
+
+    footer {
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    footer .navref {
+        flex-direction: column;
+    }
+
+    footer .navref a {
+        margin: 0;
+
+    }
+
+    footer .contactCopy {
+        flex-direction: column;
+    }
+
+    footer .contactCopy p {
+        font-size: 17px;
+    }
+
+    footer .contactIcons {
+        justify-content: flex-start;
+    }
+
+    footer .contactLinks {
+        padding: 0;
+    }
+
+    footer .navref {
+        align-items: flex-start;
+    }
+
+    footer .contactInfo {
+        padding: 0;
+    }
+
+    /* ------------------------------- */
+
+
+    /* -------------Work At page------------- */
+
+    .titleWork {
+        padding: 42px 30px;
+    }
+
+    .titleWork p {
+        margin: 0;
+        font-size: 60px;
+    }
+
+    .WorkBtns {
+        flex-wrap: wrap;
+
+    }
+
+    .Work-btn1 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .Work-btn2 p {
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 18px;
+        text-align: center;
+        color: #2B2B2B;
+        cursor: pointer;
+    }
+
+    .Work-btn1 {
+        margin: 20px;
+    }
+
+    .Work-btn2 {
+        margin: 20px;
+    }
+
+    .VacanciesSection {
+        /* padding: 0; */
+    }
+
+    .VacanciesSection div {
+        margin: 26px;
+    }
+
+    .VacanciesAviability {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .CandidatureSection {
+        padding: 95px 20px 95px;
+        justify-content: center;
+    }
+
+    .CandidateP1 {
+        font-size: 33PX;
+    }
+
+    .CandidateP2 {
+        margin: 18px 0;
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Partnership page------------- */
+    .PartnerVector {
+        display: none;
+    }
+
+    .PMheader .p1 {
+        font-size: 40px;
+    }
+
+    .PMheader .p2 {
+        font-size: 14px;
+    }
+
+    .PartnerColumn1 {
+        padding: 20px;
+    }
+
+    .PartnershipTitle {
+        font-size: 70px;
+    }
+
+    .PMsection1 .title {
+        font-size: 30px;
+    }
+
+    .PMsection2 .title {
+        font-size: 30px;
+    }
+
+    .PMsection3 .title {
+        font-size: 30px;
+    }
+
+    .PMsection4 .title {
+        font-size: 30px;
+    }
+
+    .PMsections {
+        padding: 103px 20px;
+    }
+
+    .section2-domains .domain {
+        margin: 18px 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .section3-domains .domain {
+        margin: 18px 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .section3-domains div {
+        margin: 9px 0;
+    }
+
+    .section4-domains .domain {
+        margin: 18px 0;
+        padding: 0;
+        text-align: start;
+    }
+
+    .PMcontact p {
+        font-size: 40px;
+    }
+
+    .PMForm .container {
+        margin: 30px;
+    }
+
+    .PMForm .container .title {
+        font-size: 50px;
+        line-height: normal;
+    }
+
+    .PMForm .container .description {
+        font-size: 14px;
+    }
+
+    .PMForm {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ------------------------------- */
+
+
+    /* -------------Contacts page------------- */
+    .ContactColumn {
+        padding: 30px;
+    }
+
+    .ContactColumn img {
+        width: 200px;
+    }
+
+    .ContactTextDescription {
+        line-height: normal;
+        font-size: 16px;
+    }
+
+
+
+    /* ------------------------------- */
 }
