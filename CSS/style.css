@@ -221,8 +221,8 @@ nav .navref button {
     border-radius: 32px;
     border: #923A3A;
     margin-right: 7px;
-    cursor: pointer;
     transition: .5s;
+    cursor: pointer;
 }
 
 .ContactBtn p {
@@ -231,6 +231,7 @@ nav .navref button {
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .ContactBtn:hover {
@@ -557,6 +558,7 @@ nav .navref button {
     order: 1;
     flex-grow: 0;
     transition: .5s;
+    cursor: pointer;
 }
 
 .cta-btn:hover {
@@ -571,6 +573,7 @@ nav .navref button {
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .title3 {
@@ -638,6 +641,7 @@ nav .navref button {
     order: 1;
     flex-grow: 0;
     transition: .5s;
+    cursor: pointer;
 }
 
 .Partner-btn:hover {
@@ -652,6 +656,7 @@ nav .navref button {
     font-weight: 400;
     font-size: 18px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .PartnershipTitle {
@@ -1002,6 +1007,7 @@ nav .navref button {
     margin-right: 7px;
     cursor: pointer;
     transition: .5s;
+    cursor: pointer;
 }
 
 .PMForm .container .Form .submitbtn p {
@@ -1010,6 +1016,7 @@ nav .navref button {
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .PMForm .container .Form .submitbtn:hover {
