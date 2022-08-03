@@ -6,51 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <title>Contacts</title>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html"><img class="logo" src="../resources/logo sabzer.png" alt=""></a>
-        <ul class="navref">
-            <button>ENG</button>
-            <li><a href="../pages/WorkSabzer.html">Work at Sabzer</a>
-            </li>
-            <li><a href="../pages/Partnership.html">Partnership</a></li>
-            <li><a>Contacts</a></li>
-        </ul>
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-                <li><a href="../pages/WorkSabzer.html">Work at Sabzer</a>
-                </li>
-                <li><a href="../pages/Partnership.html">Partnership</a></li>
-                <li><a>Contacts</a></li>
-            </ul>
-        </label>
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../resources/logo sabzer.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link">ENG</a>
+                    <a class="nav-link" aria-current="page" href="../pages/WorkSabzer.html">Work at Sabzer</a>
+                    <a class="nav-link" href="../pages/Partnership.html">Partnership</a>
+                    <a class="nav-link active" href="">Contacts</a>
+                </div>
+            </div>
+        </div>
     </nav>
     <main>
         <div class="ContactHeader">
-            <div class="ContactColumn">
-                <img src="../resources/logo sabzer.png" alt="">
-                <p>+37369999999<br>contact@sabzer.com<br>str. Fratelli</p>
-                <p> &copy; COMPANY 2022 <br> Privacy policy & Terms of use</p>
-                <button class="ContactBtn">
-                    <a href="../pages/Partnership.html">
-                        <p>Get started</p>
-                    </a>
-                </button>
-            </div>
-            <div class="ContactColumn">
-                <p class="ContactTextDescription">Years of developing web solutions of various complexities for eCommerce, Media, HealthCare, and other
-                    industries with a focus on the business value that our products deliver to the customer.
-                    <br>Full-cycle front-end and back-end development Well-planned architecture: cloud-native,
-                    microservices-based, serverless, etc. Websites development for companies of various profiles
-                    High-load web apps development Responsive UI/UX design of web products<br></p>
+            <div class="ContactHeader-container">
+                <div class="ContactColumn">
+                    <img src="../resources/logo sabzer.png" alt="">
+                    <p>+37369999999<br>contact@sabzer.com<br>str. Fratelli</p>
+                    <p> &copy; COMPANY 2022 <br> Privacy policy & Terms of use</p>
+                    <button class="ContactBtn">
+                        <a href="../pages/Partnership.html">
+                            <p>Get started</p>
+                        </a>
+                    </button>
+                </div>
+                <div class="ContactColumn">
+                    <p class="ContactTextDescription">Years of developing web solutions of various complexities for
+                        eCommerce, Media, HealthCare, and other
+                        industries with a focus on the business value that our products deliver to the customer.
+                        <br>Full-cycle front-end and back-end development Well-planned architecture: cloud-native,
+                        microservices-based, serverless, etc. Websites development for companies of various profiles
+                        High-load web apps development Responsive UI/UX design of web products<br>
+                    </p>
+                </div>
             </div>
         </div>
+
     </main>
     <footer>
         <div class="contactInfo">

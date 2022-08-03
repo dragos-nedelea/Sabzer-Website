@@ -14,11 +14,8 @@ body {
 }
 
 .Logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 90px 173px;
+   
+    /* padding: 90px 173px; */
 }
 
 .Logos div img {
@@ -39,7 +36,7 @@ nav {
     align-items: center;
     transition: 1s;
     z-index: 1;
-    height: 100px;
+    /* height: 100px; */
     left: 0px;
     right: 0px;
     top: 0px;
@@ -47,39 +44,30 @@ nav {
     background: #FFFFFF;
 }
 
-nav .navref {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    margin-right: 5%;
-    padding: 0;
-
-}
-
-nav .navref a {
-    text-decoration: none;
-
+.navbar-nav a{
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 32px;
 
     color: #2B2B2B;
     transition: .25s;
     cursor: pointer;
-
-}
-
-nav .navref a:hover {
-    background: #EFEFEF;
     border-radius: 32px;
-
+    margin: 25px 0;
+    text-align: center;
 }
+
+.navbar-nav a:hover {
+background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+    cursor: pointer;
+    width: 108px;
+}
+
 
 nav .navref button {
     border: none;
@@ -91,23 +79,62 @@ nav .navref button {
     z-index: 2;
     background: #3B3B3B;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    
+
 }
 
 .header .column1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 60%;
+    width: 50%;
     position: relative;
-    padding: 70px 100px 30px;
+    padding: 70px 0 0 0;
 }
 
 .header .column2 {
-    width: 40%;
+    width: 50%;
     position: relative;
 }
+
+.header-container {
+    max-width: 1320px;
+    margin: 0 auto 0 auto;
+    /* padding: 0 15px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.FDev-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 70px 0 30px 0;
+    background: #EFEFEF;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #EFEFEF;
+}
+
+.WhyUs-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.Logos-container {
+    max-width: 1320px;
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
 
 .titleHome {
 
@@ -129,7 +156,6 @@ nav .navref button {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    margin-bottom: 300px;
     color: #F0F0F0;
 
     opacity: 0.5;
@@ -138,7 +164,7 @@ nav .navref button {
 .gr {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 65%;
     background: linear-gradient(235deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0) 45%)
 }
 
@@ -174,14 +200,19 @@ nav .navref button {
 
 /* -------------Contacts page------------- */
 
+.ContactHeader-container {
+    display: flex; 
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
 .ContactHeader {
-    display: flex;
     background: #EFEFEF;
 }
 
 .ContactColumn {
     width: 50%;
-    padding: 92px 105px;
+    padding: 90px 0;
 }
 
 
@@ -232,6 +263,8 @@ nav .navref button {
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+    margin: 0;
+    text-decoration: none;
 }
 
 .ContactBtn:hover {
@@ -251,9 +284,29 @@ nav .navref button {
 
 /* -------------Work at Sabzer page------------- */
 
+.titlework-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.VacanciesSection-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.CandidatureSection-container {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .titleWork {
     background: #EFEFEF;
-    padding: 82px 0 26px 104px;
+    padding: 82px 0 26px 0;
 
 
 }
@@ -306,6 +359,7 @@ nav .navref button {
     text-align: center;
     color: #FFFFFF;
     cursor: pointer;
+    margin: 0;
 
 }
 
@@ -331,6 +385,7 @@ nav .navref button {
     width: fit-content;
     cursor: pointer;
     line-height: normal;
+    margin: 0;
 
 }
 
@@ -342,8 +397,8 @@ nav .navref button {
 .VacanciesSection div {
     background: #F7F7F7;
     border-radius: 10px;
-    padding: 40px 0 40px 40px;
-    margin: 26px 105px;
+    padding: 40px 0 40px 10px;
+    /* margin: 26px 105px; */
 }
 
 .VacanciesAviability {
@@ -363,11 +418,7 @@ nav .navref button {
 }
 
 .CandidatureSection {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 81px 105px;
+    padding: 81px 0;
 }
 
 .CandidateP1 {
@@ -417,7 +468,7 @@ nav .navref button {
 }
 
 .WhyUs {
-    padding: 120px 90px;
+    padding: 120px 0;
     background: #3B3B3B;
 }
 
@@ -485,12 +536,8 @@ nav .navref button {
 
 
 .features {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
     background: #EFEFEF;
-    padding: 102px;
+    /* padding: 102px; */
 }
 
 .FDev {
@@ -574,6 +621,7 @@ nav .navref button {
     font-size: 18px;
     color: #FFFFFF;
     cursor: pointer;
+    margin: 0;
 }
 
 .title3 {
@@ -608,6 +656,14 @@ nav .navref button {
 
 /* -------------Partnership page------------- */
 
+
+.PartnerHeader-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    background: #EFEFEF;
+
+}
+
 .PartnerHeader {
     display: flex;
     justify-content: space-between;
@@ -615,7 +671,7 @@ nav .navref button {
 }
 
 .PartnerColumn1 {
-    padding: 73px 0 0 101px;
+    /* padding: 73px 0 0 101px; */
 
 }
 
@@ -626,7 +682,7 @@ nav .navref button {
 
 .PartnerVector {
     position: absolute;
-    right: 0;
+    right: -950px;
     bottom: 0;
 }
 
@@ -657,6 +713,7 @@ nav .navref button {
     font-size: 18px;
     color: #FFFFFF;
     cursor: pointer;
+    margin: 0;
 }
 
 .PartnershipTitle {
@@ -679,7 +736,7 @@ nav .navref button {
     font-size: 18px;
     line-height: 32px;
     margin: 0;
-    /* width: 728px; */
+    width: 728px;
     color: #2D2D2D;
 
     opacity: 0.5;
@@ -727,17 +784,16 @@ nav .navref button {
 }
 
 .PMsections {
-    padding: 103px 0 26px 104px;
+    /* padding: 103px 0 26px 104px; */
 }
 
 .PMsection1 .title {
-    margin: 0;
+    /* margin: 0; */
     line-height: normal;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 32px;
     color: #000000;
 
 }
@@ -747,7 +803,6 @@ nav .navref button {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 32px;
     color: #000000;
 }
 
@@ -756,7 +811,6 @@ nav .navref button {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 32px;
     color: #000000;
 }
 
@@ -765,7 +819,6 @@ nav .navref button {
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
-    line-height: 32px;
     color: #000000;
 }
 
@@ -891,7 +944,7 @@ nav .navref button {
 .PMForm .container {
     display: flex;
     /* width: 50%; */
-    margin: 61px 105px;
+    /* margin: 61px 105px; */
     flex-direction: column;
 
 }
@@ -1438,6 +1491,9 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 60px 0;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 footer .contactInfo {
@@ -1446,7 +1502,7 @@ footer .contactInfo {
     /* justify-content: space-between; */
     align-items: flex-start;
     flex-direction: column;
-    padding: 60px 105px;
+    /* padding: 60px 105px; */
 }
 
 footer .contactInfo p {
@@ -1462,7 +1518,7 @@ footer .contactInfo p {
 }
 
 footer .contactLinks {
-    padding: 60px 105px;
+    /* padding: 60px 105px; */
     display: flex;
     flex-direction: column;
 
@@ -1517,7 +1573,7 @@ footer .navref a {
 }
 
 footer .navref a:hover {
-    background: #EFEFEF;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 32px;
 
 }
@@ -1544,6 +1600,7 @@ footer .contactCopy p {
 
 footer .logo {
     width: 108px;
+    margin: 15px 0;
 }
 
 
@@ -1696,6 +1753,22 @@ h1 {
         display: none;
     }
 
+    .WhyUs-container {
+        max-width: 1320px;
+        margin: 0 auto 0 auto;
+    }
+
+    .header-container {
+        max-width: 1320px;
+
+    }
+
+    .FDev-container {
+        max-width: 1320px;
+        margin: auto;
+        background: #EFEFEF;
+    }
+
 
     /* -------------Work At page------------- */
     .titleWork p {
@@ -1729,9 +1802,33 @@ h1 {
     /* ------------------------------- */
 
     /* -------------Partership page------------- */
+
+    #pnform {
+        background: #EFEFEF;
+    }
+
+    .PMForm-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        background: #EFEFEF;
+        padding: 75px 0;
+    }
+
+    .PMSections-container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 100px 0 50px;
+
+    }
+
+    .PartnerHeader {
+        display: block;
+    }
+
     .PMForm {
         flex-wrap: nowrap;
         justify-content: space-between;
+        background: #EFEFEF;
     }
 
     /* ------------------------------- */
@@ -1749,13 +1846,14 @@ h1 {
 
 @media screen and (max-width: 1440px) {
 
+
     nav label {
         display: none;
     }
 
     /* -------------Wokr At page------------- */
     footer {
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding: 30px 0;
     }
 
@@ -1834,6 +1932,27 @@ h1 {
 
 
 @media screen and (max-width: 1024px) {
+
+    .WhyUs-container {
+        max-width: 960px;
+        margin: 0 auto 0 auto;
+    }
+
+    .header-container {
+        max-width: 960px;
+
+    }
+
+    .FDev-container {
+        max-width: 960px;
+        margin: auto;
+        background: #EFEFEF;
+    }
+
+    .Logos-container {
+        max-width: 960px;
+    }
+
     nav label {
         display: block;
     }
@@ -1850,8 +1969,32 @@ h1 {
         width: 100%;
     }
 
+    .FDev {
+        padding: 0;
+    }
+
+    .textArea {
+        flex-wrap: nowrap ;
+    }
+
 
     /* -------------Work At page------------- */
+
+    .titlework-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .VacanciesSection-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
+    .CandidatureSection-container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    
 
     .titleWork p {
         font-size: 90px;
@@ -1882,7 +2025,8 @@ h1 {
     }
 
     footer {
-        justify-content: space-evenly;
+        max-width: 960px;
+        margin: 0 auto;
         padding: 30px 0;
     }
 
@@ -1898,9 +2042,34 @@ h1 {
 
     /* -------------Contacts page------------- */
 
+    .ContactHeader-container {
+        max-width: 960px;
+    }
+
     .ContactHeader .ContactColumn {
         width: 100%;
 
+    }
+
+    /* ------------------------------- */
+
+    /* -------------Partership--------------------------- */
+
+    .PMForm-container {
+        max-width: 960px;
+    }
+
+    .PMSections-container {
+        max-width: 960px;
+    }
+
+    .PartnerHeader-container {
+        max-width: 960px;
+    }
+
+
+    .PartnerVector {
+        display: none;
     }
 
     /* ------------------------------- */
@@ -1912,8 +2081,24 @@ h1 {
 
 @media screen and (max-width: 768px) {
 
-    .header .column1 {
-        padding: 60px 100px;
+    .WhyUs-container {
+        max-width: 720px;
+        margin: 0 auto 0 auto;
+    }
+
+    .header-container {
+        max-width: 720px;
+
+    }
+
+    .FDev-container {
+        max-width: 720px;
+        margin: auto;
+        background: #EFEFEF;
+    }
+
+    .Logos-container {
+        max-width: 720px;
     }
 
     .subtitle1 {
@@ -1922,12 +2107,18 @@ h1 {
 
     .Logos {
         justify-content: center;
-        padding: 60px;
+        /* padding: 60px; */
+    }
+
+    .Logos div img {
+        padding: 10px;
     }
 
     footer {
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
+        max-width: 720px;
         padding: 30px 0;
+        flex-wrap: nowrap;
     }
 
     footer .contactInfo {
@@ -1972,6 +2163,22 @@ h1 {
     }
 
     /* -------------Work At page------------- */
+
+    .titlework-container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .VacanciesSection-container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .CandidatureSection-container {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
     .CandidateP1 {
         line-height: normal;
     }
@@ -1984,12 +2191,29 @@ h1 {
     /* ------------------------------- */
 
     /* -------------Partnershi page------------- */
+
+    .PMForm-container {
+        max-width: 720px;
+    }
+
+    .PMSections-container {
+        max-width: 720px;
+    }
+
+    .PartnerHeader-container {
+        max-width: 720px;
+    }
+
+    .PartnerHeader {
+        display: block;
+    }
+
     .PMsections {
         padding: 90px 30px;
     }
 
     .PartnerColumn1 {
-        padding: 70px;
+        /* padding: 70px; */
     }
 
     .PMForm {
@@ -2006,7 +2230,11 @@ h1 {
     /* ------------------------------- */
 
     /* -------------Contacts page------------- */
+
     
+    .ContactHeader-container {
+        max-width: 720px;
+    }
 
     .ContactColumn img {
         width: 350px;
@@ -2024,22 +2252,52 @@ h1 {
 
     /* -------------Home page------------- */
 
+    .WhyUs-container {
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+
+    .header-container {
+        width: 100%;
+
+    }
+
+    .FDev-container {
+        /* max-width: 960px; */
+        margin: auto;
+        justify-content: center;
+        background: #EFEFEF;
+    }
+
+    .Logos-container {
+        /* max-width: 960px; */
+    }
+
     .header .column1 {
-        padding: 50px 40px;
+        padding: 50px 15px;
 
     }
 
     .titleHome {
-        font-size: 40px;
+        font-size: 70px;
         line-height: normal;
     }
 
     .WhyUs {
-        padding: 120px 45px;
+        padding: 120px 15px;
     }
 
     .WhySection img {
         width: 365px;
+    }
+
+    .textArea {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textArea :nth-child(3) {
+        margin: 28px 0;
     }
 
     .features {
@@ -2047,23 +2305,26 @@ h1 {
     }
 
     .Logos {
-        padding: 70px;
+        padding: 0 15px;
     }
 
     .title2 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     .title3 {
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .subtitle3 {
         margin: 18px;
+        font-size: 20px;
     }
 
     footer {
-        justify-content: flex-start;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: column;
         padding: 10px;
     }
 
@@ -2258,12 +2519,22 @@ h1 {
         justify-content: center;
     }
 
+    .PartnershipDescription {
+        width: auto;
+    }
+
     /* ------------------------------- */
 
 
     /* -------------Contacts page------------- */
+
+
+    .ContactHeader-container {
+        flex-direction: column;
+    }
+
     .ContactColumn {
-        padding: 30px;
+        padding: 15px;
     }
 
     .ContactColumn img {

@@ -6,63 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <title>Work at Sabzer</title>
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html"><img class="logo" src="../resources/logo sabzer.png" alt=""></a>
-        <ul class="navref">
-            <button>ENG</button>
-            <li><a>Work at Sabzer</a>
-            </li>
-            <li><a href="../pages/Partnership.html">Partnership</a></li>
-            <li><a href="../pages/Contacts.html">Contacts</a></li>
-        </ul>
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-                <li><a>Work at Sabzer</a>
-                </li>
-                <li><a href="../pages/Partnership.html">Partnership</a></li>
-                <li><a href="../pages/Contacts.html">Contacts</a></li>
-            </ul>
-        </label>
-    </nav>
-    <main>
-        <div class="titleWork">
-            <p>Be a part<br>of our team!</p>
-            <div class="WorkBtns">
-                <button class="Work-btn1">
-                    <p>Send CV</p>
-                </button>
-                <button class="Work-btn2">
-                    <p>Refer a friend</p>
-                </button>
+
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../resources/logo sabzer.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link">ENG</a>
+                    <a class="nav-link active" aria-current="page" href="">Work at Sabzer</a>
+                    <a class="nav-link" href="../pages/Partnership.html">Partnership</a>
+                    <a class="nav-link" href="../pages/Contacts.html">Contacts</a>
+                </div>
             </div>
         </div>
-        <div class="VacanciesSection">
-            <p class="VacanciesAviability">Vacancies found</p>
-            <div>
-                <p class="JobPosition">Front-end Developer</p>
-                <p class="JobSchedule">Full time / Remote</p>
+    </nav>
+
+    <main>
+        <div class="titleWork">
+            <div class="titlework-container">
+                <p>Be a part<br>of our team!</p>
+                <div class="WorkBtns">
+                    <button class="Work-btn1">
+                        <p>Send CV</p>
+                    </button>
+                    <button class="Work-btn2">
+                        <p>Refer a friend</p>
+                    </button>
+                </div>
             </div>
-            <div>
-                <p class="JobPosition">Full-stack developer </p>
-                <p class="JobSchedule">Full time / Remote</p>
+        </div>
+
+        </div>
+        <div class="VacanciesSection">
+            <div class="VacanciesSection-container">
+                <p class="VacanciesAviability">Vacancies found</p>
+                <div>
+                    <p class="JobPosition">Front-end Developer</p>
+                    <p class="JobSchedule">Full time / Remote</p>
+                </div>
+                <div>
+                    <p class="JobPosition">Full-stack developer </p>
+                    <p class="JobSchedule">Full time / Remote</p>
+                </div>
             </div>
         </div>
         <div class="CandidatureSection">
-            <div>
-                <p class="CandidateP1">Know a perfect candidate for us?</p>
-                <p class="CandidateP2">Refer a friend and get valuable bonus</p>
-            </div>
-            <div>
-                <button class="Work-btn2">
-                    <p>Refer a friend</p>
-                </button>
+            <div class="CandidatureSection-container">
+
+                <div>
+                    <p class="CandidateP1">Know a perfect candidate for us?</p>
+                    <p class="CandidateP2">Refer a friend and get valuable bonus</p>
+                </div>
+                <div>
+                    <button class="Work-btn2">
+                        <p>Refer a friend</p>
+                    </button>
+                </div>
             </div>
         </div>
         <div class="DivColor"></div>
